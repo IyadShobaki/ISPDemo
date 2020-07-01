@@ -6,12 +6,8 @@ using System.Threading.Tasks;
 
 namespace DemoLibrary
 {
-    public interface ILibraryItem
+    public interface IBorrowable
     {
-        string LibraryId { get; set; }
-        string Title { get; set; }
-        string Author { get; set; }
-        int Pages { get; set; }
         int CheckOutDurationInDays { get; set; }
         string Borrower { get; set; }
         DateTime BorrowDate { get; set; }
